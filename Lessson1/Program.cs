@@ -10,12 +10,13 @@
 
 
 // this is 1111
+// this is  isisi
 
 using System.Runtime.Intrinsics.Arm;
 
 /// this is mail 
 ///
-Console.WriteLine("Hello, World!");
+
 
 
 int a = 8;
@@ -41,6 +42,8 @@ uint numberUnit = 0;
 
 float numberFloat = 10.111f;
 double numberDouble = 10.555;
+
+decimal money = 10.3M;
 
 char textChar = 'a';
 
@@ -211,6 +214,7 @@ switch (today)
             Console.WriteLine($"Today is Teuday");
             break;
         }
+    case "Thurday":
     case "Wedsday":
         {
             Console.WriteLine($"Today is Wedsday");
@@ -280,6 +284,12 @@ foreach (var parent in jaggedArray)
     }
 }
 
+List<List<List<double>>> threeDimension = new List<List<List<double>>>();
+List<double> oneDimension = new List<double>();
+List<List<double>> twoDimension2 = new List<List<double>>();
+
+IList<double> listDouble= new List<double>();
+IEnumerable<double> iEnumberable;
 
 
 
