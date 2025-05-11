@@ -87,16 +87,6 @@ isValid5 = isValid3 && isValue4; // false;
 bool isResult = value1 > value2 || isValid3;
 
 
-int[] arrayInt = new int[5];
-arrayInt[0] = 10;
-arrayInt[1] = 20;
-
-int firstValue = arrayInt[0];
-int secondValue = arrayInt[1];
-
-int[] arrayInt2 = { 10, 5, 7 };
-
-int countArray = arrayInt2.Length;
 
 double numberDouble2 = 100;
 
@@ -233,5 +223,50 @@ switch (today)
         }
 
 }
+
+
+int[] arrayInt = new int[5];
+arrayInt[0] = 10;
+arrayInt[1] = 20;
+
+int firstValue = arrayInt[0];
+int secondValue = arrayInt[1];
+
+int[] arrayInt2 = { 10, 5, 7 };
+
+int countArray = arrayInt2.Length;
+
+int total = 0; // 
+for(int i = 0; i< arrayInt2.Length; i++)
+{
+    total+= arrayInt2[i]; 
+}
+total = 0;
+foreach(int valueItem in arrayInt2)
+{
+    total+= valueItem;
+}
+
+
+double[,] arrayTwoDimension = new double[3, 2];
+arrayTwoDimension[0, 0] = 10;
+arrayTwoDimension[0, 1] = 30;
+arrayTwoDimension[1, 0] = -10;
+
+double[,] arrayDimension2 = { { 10, 2 }, { 5, 7 }, { 3,7 } };
+
+double[][] jaggedArray = new double[2][];
+jaggedArray[0] = new double[3];
+jaggedArray[1] = new double[1];
+jaggedArray[0][2] = 20;
+jaggedArray[0][ 0] = -10;
+jaggedArray[0][ 1] = -30;
+jaggedArray[1][0] = 100;
+
+
+
+
+
+
 
 
