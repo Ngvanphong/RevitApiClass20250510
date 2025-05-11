@@ -263,6 +263,23 @@ jaggedArray[0][ 0] = -10;
 jaggedArray[0][ 1] = -30;
 jaggedArray[1][0] = 100;
 
+for(int indexParent = 0; indexParent < jaggedArray.Length; indexParent++)
+{
+    for(int indexChildren= 0; indexChildren< jaggedArray[indexParent].Length; indexChildren++)
+    {
+        Console.WriteLine(jaggedArray[indexParent][indexChildren]);
+    }
+}
+
+
+foreach (var parent in jaggedArray)
+{
+    foreach(var child in parent)
+    {
+
+    }
+}
+
 
 
 
