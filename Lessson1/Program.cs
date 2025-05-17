@@ -297,32 +297,57 @@ using Lessson1;
 
 #endregion
 
-Animal animal1 = new Animal();
-animal1.WeightKg = 30.5;
-animal1.FootCount = 4;
-animal1.PrintInformation();
+//Animal animal1 = new Animal(50,4);
+//Animal.CountInstance = 1;
+//Animal.PrintInformation();
+//double addResult= animal1.Add(1.5, 2.5, 2);
+//double weighAnimal1 = animal1.WeightKg;
 
-double weighAnimal1 = animal1.WeightKg;
+//Animal animal2= new Animal();
+//Animal.CountInstance = 2;
+//animal2.WeightKg = 20;
+//animal2.FootCount = 2;
+//Animal.PrintInformation();
 
-Animal animal2= new Animal();
-animal2.WeightKg = 20;
-animal2.FootCount = 2;
-animal2.PrintInformation();
-
-TableInfomation table1= new TableInfomation();
-table1.Length = 10;
-table1.Width = 4;
-table1.Name = "Table 1";
-double areaTable1 = table1.AreaCalculate();
-string table1Infomation= table1.Infomation();
-table1Infomation += "This is table 1";
+//int countInstance = Animal.CountInstance;
 
 
-TableInfomation table2 = new TableInfomation();
-table2.Length = 5;
-table2.Width = 2;
-table2.Name = "Table 2";
-double areaTable2 = table2.AreaCalculate(); 
+//TableInfomation table1= new TableInfomation();
+//table1.Length = 10;
+//table1.Width = 4;
+//table1.Name = "Table 1";
+//double areaTable1 = table1.AreaCalculate();
+//string table1Infomation= table1.Infomation();
+//table1Infomation += "This is table 1";
+
+
+//TableInfomation table2 = new TableInfomation();
+//table2.Length = 5;
+//table2.Width = 2;
+//table2.Name = "Table 2";
+//double areaTable2 = table2.AreaCalculate();
+
+Cat cat1= new Cat();
+cat1.WeightKg = 4;
+cat1.Name = "Black Cat";cat1.FootCount = 4;cat1.Color = "Black";
+cat1.CatInformation();
+double subtract1 = cat1.Subtract(10, 5);
+
+
+Dog dog1= new Dog();
+double subtract2= dog1.Subtract(7, 8);
+
+Student student1= new Student();
+student1.Infomation("St1", 1111, 15);
+
+Family famiy1 = new Family();
+famiy1.Address = "1111";
+famiy1.Count = 10;
+famiy1.SetInt();
+
+
+
+
 
 
 
