@@ -23,7 +23,7 @@ namespace Lessson1
         {
 
         }
-        public double WeightKg { get; set; }
+        protected double WeightKg { get; set; }
 
         public int FootCount { set; get; }
 

@@ -297,13 +297,13 @@ using Lessson1;
 
 #endregion
 
-//Animal animal1 = new Animal(50,4);
+//Animal animal1 = new Animal(50, 4);
 //Animal.CountInstance = 1;
 //Animal.PrintInformation();
-//double addResult= animal1.Add(1.5, 2.5, 2);
+//double addResult = animal1.Add(1.5, 2.5, 2);
 //double weighAnimal1 = animal1.WeightKg;
 
-//Animal animal2= new Animal();
+//Animal animal2 = new Animal();
 //Animal.CountInstance = 2;
 //animal2.WeightKg = 20;
 //animal2.FootCount = 2;
@@ -312,12 +312,12 @@ using Lessson1;
 //int countInstance = Animal.CountInstance;
 
 
-//TableInfomation table1= new TableInfomation();
+//TableInfomation table1 = new TableInfomation();
 //table1.Length = 10;
 //table1.Width = 4;
 //table1.Name = "Table 1";
 //double areaTable1 = table1.AreaCalculate();
-//string table1Infomation= table1.Infomation();
+//string table1Infomation = table1.Infomation();
 //table1Infomation += "This is table 1";
 
 
@@ -327,27 +327,59 @@ using Lessson1;
 //table2.Name = "Table 2";
 //double areaTable2 = table2.AreaCalculate();
 
-Cat cat1= new Cat();
-cat1.WeightKg = 4;
-cat1.Name = "Black Cat";cat1.FootCount = 4;cat1.Color = "Black";
-cat1.CatInformation();
-double subtract1 = cat1.Subtract(10, 5);
+//Cat cat1= new Cat();
+//cat1.WeightKg = 4;
+//cat1.Name = "Black Cat";cat1.FootCount = 4;cat1.Color = "Black";
+//cat1.CatInformation();
+//double subtract1 = cat1.Subtract(10, 5);
 
 
-Dog dog1= new Dog();
-double subtract2= dog1.Subtract(7, 8);
+//Dog dog1= new Dog();
+//double subtract2= dog1.Subtract(7, 8);
 
-Student student1= new Student();
-student1.Infomation("St1", 1111, 15);
+//Student student1= new Student();
+//student1.Infomation("St1", 1111, 15);
 
-Family famiy1 = new Family();
-famiy1.Address = "1111";
-famiy1.Count = 10;
-famiy1.SetInt();
-
-
+//Family famiy1 = new Family();
+//famiy1.Address = "1111";
+//famiy1.Count = 10;
+//famiy1.SetInt();
 
 
+
+Building building1= new Building();
+building1.Street = "Nguyen huu canh";
+building1.City = "HCM";
+building1.PrintInformation();
+
+Company company= new Company();
+company.Street = " HHH";
+company.City = "HN";
+company.PrintInformation();
+company.CityInfo();
+company.CityInfo("Da nang");
+company.CityInfo(1111);
+
+Cat cat2= new Cat();
+
+
+Circle circle1= new Circle();
+circle1.Name = " Circle 1";
+circle1.Radius = 10;
+
+Circle circle2= new Circle();
+circle2.Name = "Circle 2";
+circle2.Radius = 3;
+
+Circle subtractCircle = circle1 - circle2;
+
+double radius = subtractCircle.Radius;
+string name= subtractCircle.Name;
+
+Wall wall = new Wall();
+wall.Height = 100;
+wall.Thickness = 10;
+double height= wall.Height;
 
 
 

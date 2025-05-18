@@ -14,8 +14,10 @@ namespace Lessson1
 
         public void CatInformation()
         {
+            WeightKg = 3300303;
             string resultValue = $"Name : {Name} , Color {Color}, \n Weight {WeightKg} Foot {FootCount}";
             Console.WriteLine(resultValue);
         }
+
     }
 }
