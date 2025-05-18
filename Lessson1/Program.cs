@@ -468,25 +468,19 @@ List<List<Circle>> listListCircle = new List<List<Circle>>();
 }
 
 
-
-
-
-
-
-
-
 // 
 
-Animal an1 = new Animal();
 
 Cat cat1= new Cat();
+cat1.Name = "A";
 
 Dog dog1 = new Dog();
 
+Animal animalFromCat= (Animal)cat1;
 
+Animal animal3 = new Animal();
 
-Animal animalFromCat= cat1 as Animal;
-
+//Dog dog4 = animal3;
 
 
 string valueString = "10rr";
