@@ -363,27 +363,159 @@ company.CityInfo(1111);
 Cat cat2= new Cat();
 
 
-Circle circle1= new Circle();
-circle1.Name = " Circle 1";
-circle1.Radius = 10;
 
-Circle circle2= new Circle();
-circle2.Name = "Circle 2";
-circle2.Radius = 3;
-
-Circle subtractCircle = circle1 - circle2;
-
-double radius = subtractCircle.Radius;
-string name= subtractCircle.Name;
 
 Wall wall = new Wall();
 wall.Height = 100;
 wall.Thickness = 10;
 double height= wall.Height;
 
+Chair chair1= new Chair();
+chair1.Width = 100;
+
+DayEnums today = DayEnums.Sunday;
+if(today == DayEnums.Monday) 
+{ 
+
+}
+
+string stringValue = "This is sunday - hhhh";
+var listString= stringValue.Split('-',StringSplitOptions.RemoveEmptyEntries);
+
+
+
+
+Circle circle1 = new Circle();
+circle1.Name = " Circle 1";
+circle1.Radius = 10;
+
+Circle circle2 = new Circle();
+circle2.Name = "Circle 2";
+circle2.Radius = 3;
+
+Circle subtractCircle = circle1 - circle2;
+
+double radius = subtractCircle.Radius;
+string name = subtractCircle.Name;
+
+
+
+Circle circle3 = new Circle();
+circle3.Name = " Circle 1";
+circle3.Radius = 10;
+
+Circle[] circleArray = new Circle[3];
+circleArray[0] = circle1;
+circleArray[1] = circle2;
+circleArray[2] = circle2;
+
+List<Circle> listCircle = new List<Circle>();
+List<int> listInt= new List<int>(); 
+List<double> listDouble = new List<double>();
+listCircle.AddRange(new List<Circle> { circle1, circle2, circle3 });
+
+listCircle= new List<Circle> { circle1, circle3, circle2 };
+
+foreach(Circle circle in listCircle)
+{
+
+}
+
+IList<Circle> listCircle2= new List<Circle>();
+listCircle2.Add(circle1);
+listCircle2.Add(circle2);
+listCircle2.Add(circle3);
+
+var value0= listCircle[0];
+
+Circle newCircle;
+double? doubleNull;
+
+
+//revit.Document doc = null;
+
+//IEnumerable<Wall> ienumerabeCircle = new revit.FilteredElementCollector(doc).OfClass(typeof(revit.Wall))
+//    .Cast<Wall>();
+
+ICollection<Circle> colleciton2;
+
+Element<double> elementDouble = new Element<double>();
+elementDouble.ListElements = new List<double>();
+elementDouble.ListElements.Add(102.2);
+elementDouble.ListElements.Add(105.2);
+
+
+Element<int> elementInt = new Element<int>();
+elementInt.ListElements = new List<int>();
+elementInt.ListElements.Add(102);
+elementInt.ListElements.Add(102);
+
+Element<Circle> elementCircle = new Element<Circle>();
+elementCircle.ListElements = new List<Circle>();
+elementCircle.ListElements.Add(circle1);
+elementCircle.ListElements.Add(circle2);
+
+
+
+List<List<Circle>> listListCircle = new List<List<Circle>>();
+
+ foreach(List<Circle> parent in listListCircle)
+{
+    foreach(Circle child in parent)
+    {
+
+    }
+}
 
 
 
 
 
 
+
+
+
+// 
+
+Animal an1 = new Animal();
+
+Cat cat1= new Cat();
+
+Dog dog1 = new Dog();
+
+
+
+Animal animalFromCat= cat1 as Animal;
+
+
+
+string valueString = "10rr";
+
+int valueInt = 0;
+bool isSuccess= int.TryParse(valueString, out valueInt);
+if (isSuccess)
+{
+
+}
+
+//int valueInt= int.Parse(valueString);
+
+//double valueDouble= double.Parse(valueString);
+
+
+Wall wall3 = new Wall();
+wall3.Height = 10;
+wall3.Thickness = 10;
+double volume = 0;
+double area = 0;
+wall3.Volume(1000, out volume, out area);
+
+List<Circle> listRefCircle = new List<Circle>();
+wall3.AddList(new List<Circle>(listRefCircle));
+
+
+double areaRef = 2;
+wall3.Area(10,ref areaRef);
+
+
+int int333 = 4;

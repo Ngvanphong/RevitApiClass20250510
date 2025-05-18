@@ -29,5 +29,24 @@ namespace Lessson1
             return height * thickness;
         }
 
+        public void Volume(double length,out double volume, out double area)
+        {
+            volume = length * height * thickness;
+            area= length * thickness;
+        }
+
+        public void Area(double length,ref double area)
+        {
+            area = 100;
+        }
+
+        public void AddList(List<Circle> listCircle)
+        {
+            Circle circle3 = new Circle();
+            circle3.Name = " Circle 1";
+            circle3.Radius = 10;
+            listCircle.Add(circle3);
+        }
+
     }
 }
