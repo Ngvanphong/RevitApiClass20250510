@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autodesk.Revit.DB;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace Lessson1
         {
 
         }
-        protected double WeightKg { get; set; }
+        protected double WeightKg { get;  set; }
 
         public int FootCount { set; get; }
 
@@ -34,6 +35,7 @@ namespace Lessson1
             Console.WriteLine(infomationValue);
             string information = string.Empty;
             information += "This ssss";
+            
         }
 
         public double Add(double a, double b, double c)

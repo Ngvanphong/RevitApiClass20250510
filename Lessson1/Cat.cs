@@ -18,6 +18,7 @@ namespace Lessson1
             string resultValue = $"Name : {Name} , Color {Color}, \n Weight {WeightKg} Foot {FootCount}";
             Console.WriteLine(resultValue);
         }
+        
 
     }
 }

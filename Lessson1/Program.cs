@@ -245,14 +245,14 @@ using Lessson1;
 //int countArray = arrayInt2.Length;
 
 //int total = 0; // 
-//for(int i = 0; i< arrayInt2.Length; i++)
+//for (int i = 0; i < arrayInt2.Length; i++)
 //{
-//    total+= arrayInt2[i]; 
+//    total += arrayInt2[i];
 //}
 //total = 0;
-//foreach(int valueItem in arrayInt2)
+//foreach (int valueItem in arrayInt2)
 //{
-//    total+= valueItem;
+//    total += valueItem;
 //}
 
 
@@ -261,19 +261,19 @@ using Lessson1;
 //arrayTwoDimension[0, 1] = 30;
 //arrayTwoDimension[1, 0] = -10;
 
-//double[,] arrayDimension2 = { { 10, 2 }, { 5, 7 }, { 3,7 } };
+//double[,] arrayDimension2 = { { 10, 2 }, { 5, 7 }, { 3, 7 } };
 
 //double[][] jaggedArray = new double[2][];
 //jaggedArray[0] = new double[3];
 //jaggedArray[1] = new double[1];
 //jaggedArray[0][2] = 20;
-//jaggedArray[0][ 0] = -10;
-//jaggedArray[0][ 1] = -30;
+//jaggedArray[0][0] = -10;
+//jaggedArray[0][1] = -30;
 //jaggedArray[1][0] = 100;
 
-//for(int indexParent = 0; indexParent < jaggedArray.Length; indexParent++)
+//for (int indexParent = 0; indexParent < jaggedArray.Length; indexParent++)
 //{
-//    for(int indexChildren= 0; indexChildren< jaggedArray[indexParent].Length; indexChildren++)
+//    for (int indexChildren = 0; indexChildren < jaggedArray[indexParent].Length; indexChildren++)
 //    {
 //        Console.WriteLine(jaggedArray[indexParent][indexChildren]);
 //    }
@@ -282,7 +282,7 @@ using Lessson1;
 
 //foreach (var parent in jaggedArray)
 //{
-//    foreach(var child in parent)
+//    foreach (var child in parent)
 //    {
 
 //    }
@@ -292,58 +292,58 @@ using Lessson1;
 //List<double> oneDimension = new List<double>();
 //List<List<double>> twoDimension2 = new List<List<double>>();
 
-//IList<double> listDouble= new List<double>();
+//IList<double> listDouble = new List<double>();
 //IEnumerable<double> iEnumberable;
 
 #endregion
 
-//Animal animal1 = new Animal(50, 4);
-//Animal.CountInstance = 1;
-//Animal.PrintInformation();
-//double addResult = animal1.Add(1.5, 2.5, 2);
-//double weighAnimal1 = animal1.WeightKg;
+Animal animal1 = new Animal(50, 4);
+Animal.CountInstance = 1;
+Animal.PrintInformation();
+double addResult = animal1.Add(1.5, 2.5, 2);
+double weighAnimal1 = animal1.WeightKg;
 
-//Animal animal2 = new Animal();
-//Animal.CountInstance = 2;
-//animal2.WeightKg = 20;
-//animal2.FootCount = 2;
-//Animal.PrintInformation();
+Animal animal2 = new Animal();
+Animal.CountInstance = 2;
+animal2.WeightKg = 20;
+animal2.FootCount = 2;
+Animal.PrintInformation();
 
-//int countInstance = Animal.CountInstance;
-
-
-//TableInfomation table1 = new TableInfomation();
-//table1.Length = 10;
-//table1.Width = 4;
-//table1.Name = "Table 1";
-//double areaTable1 = table1.AreaCalculate();
-//string table1Infomation = table1.Infomation();
-//table1Infomation += "This is table 1";
+int countInstance = Animal.CountInstance;
 
 
-//TableInfomation table2 = new TableInfomation();
-//table2.Length = 5;
-//table2.Width = 2;
-//table2.Name = "Table 2";
-//double areaTable2 = table2.AreaCalculate();
-
-//Cat cat1= new Cat();
-//cat1.WeightKg = 4;
-//cat1.Name = "Black Cat";cat1.FootCount = 4;cat1.Color = "Black";
-//cat1.CatInformation();
-//double subtract1 = cat1.Subtract(10, 5);
+TableInfomation table1 = new TableInfomation();
+table1.Length = 10;
+table1.Width = 4;
+table1.Name = "Table 1";
+double areaTable1 = table1.AreaCalculate();
+string table1Infomation = table1.Infomation();
+table1Infomation += "This is table 1";
 
 
-//Dog dog1= new Dog();
-//double subtract2= dog1.Subtract(7, 8);
+TableInfomation table2 = new TableInfomation();
+table2.Length = 5;
+table2.Width = 2;
+table2.Name = "Table 2";
+double areaTable2 = table2.AreaCalculate();
 
-//Student student1= new Student();
-//student1.Infomation("St1", 1111, 15);
+Cat cat1 = new Cat();
+cat1.WeightKg = 4;
+cat1.Name = "Black Cat"; cat1.FootCount = 4; cat1.Color = "Black";
+cat1.CatInformation();
+double subtract1 = cat1.Subtract(10, 5);
 
-//Family famiy1 = new Family();
-//famiy1.Address = "1111";
-//famiy1.Count = 10;
-//famiy1.SetInt();
+
+Dog dog1 = new Dog();
+double subtract2 = dog1.Subtract(7, 8);
+
+Student student1 = new Student();
+student1.Infomation("St1", 1111, 15);
+
+Family famiy1 = new Family();
+famiy1.Address = "1111";
+famiy1.Count = 10;
+famiy1.SetInt();
 
 
 
@@ -440,13 +440,11 @@ double? doubleNull;
 ICollection<Circle> colleciton2;
 
 Element<double> elementDouble = new Element<double>();
-elementDouble.ListElements = new List<double>();
 elementDouble.ListElements.Add(102.2);
 elementDouble.ListElements.Add(105.2);
 
 
 Element<int> elementInt = new Element<int>();
-elementInt.ListElements = new List<int>();
 elementInt.ListElements.Add(102);
 elementInt.ListElements.Add(102);
 
@@ -469,7 +467,6 @@ List<List<Circle>> listListCircle = new List<List<Circle>>();
 
 
 // 
-
 
 Cat cat1= new Cat();
 cat1.Name = "A";
@@ -500,7 +497,7 @@ if (isSuccess)
 Wall wall3 = new Wall();
 wall3.Height = 10;
 wall3.Thickness = 10;
-double volume = 0;
+double volume = 10;
 double area = 0;
 wall3.Volume(1000, out volume, out area);
 
@@ -513,3 +510,12 @@ wall3.Area(10,ref areaRef);
 
 
 int int333 = 4;
+
+foreach(DayEnums dayEnum in Enum.GetValues(typeof(DayEnums)))
+{
+
+}
+
+DayEnums testEnum = DayEnums.Friday;
+int intValue= (int)testEnum;
+string stringEnum= testEnum.ToString();

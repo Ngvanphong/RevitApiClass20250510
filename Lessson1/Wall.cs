@@ -37,7 +37,7 @@ namespace Lessson1
 
         public void Area(double length,ref double area)
         {
-            area = 100;
+            area  +=100;
         }
 
         public void AddList(List<Circle> listCircle)

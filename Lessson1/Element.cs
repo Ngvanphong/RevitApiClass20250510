@@ -8,6 +8,11 @@ namespace Lessson1
 {
     public class Element<T>
     {
+        public Element()
+        {
+            ListElements = new List<T>();
+        }
+
         public List<T> ListElements { set; get; }
         public void AddToList(T add)
         {
